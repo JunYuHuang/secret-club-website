@@ -1,0 +1,322 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: black;
+    color: #f8f9fa;
+}
+
+p { 
+    font-size: 1.1em;
+    overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.wrapper {
+    width: 50%;
+    padding-top: 112px;
+    margin: 0 auto;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blockquote {
+    padding-left: 0.8em;
+    margin-left: 1em;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2em;
+}
+
+.blockquote p {
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.section {
+    padding-bottom: 3rem;
+}
+
+nav { background-color: #000;}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.6);
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+}
+
+#home-section, #about-section, #beliefs-section, #contact-section, #meeting-times-section { 
+    padding-top: 56px;
+}
+
+.extra-padding-bottom {
+    margin-bottom: 56px;
+}
+
+.full-height { min-height: 100vh; }
+.half-height { min-height: 50vh; }
+.last-section-height { min-height: 96vh; }
+.footer-height { min-height: 4vh; }
+
+/* Home Section */
+#home-splash-background {
+    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
+    vertical-align: top;
+    height: 100vh;
+    background-image: url("../images/meeting-hall.jpg");
+}
+
+#home-splash-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#home-splash-content {
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+h1.display-3 {
+    margin: auto;
+}
+
+/* About Section */
+.column-right {
+    padding-left: 3em;
+    padding-right: 1em;
+}
+
+.column-left {
+    padding-left: 1em;
+    padding-right: 3em;
+}
+
+.image-height {
+    height: 75vh;
+}
+
+.about-image-frame {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 0;
+    left: 3rem; /* must change in media queries to scale */
+    width: calc(100% - 4rem); /* must change in media queries to scale */
+    font-size: 0.9rem; 
+    background-color: rgba(0,0,0,0.6);
+    text-align: right;
+    padding: 0.9rem;
+}
+
+#about-image-meeting {
+    filter: brightness(1.4);
+    background-image: url("../images/about-image-meeting.jpg");
+}
+
+#about-image-history {
+    filter: grayscale(1);
+    background-image: url("../images/about-image-old-hall.png");
+}
+
+/* Contact Section */
+.iframe-container {
+    overflow: hidden;
+    padding-top: 55%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+td {
+    color: #f8f9fa;
+}
+
+td.contact-td-icons {
+    width: 1em;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+td.contact-td-content {
+    padding-top: 0;
+}
+
+/* Meeting Times Section */
+.meeting-times-th {
+    vertical-align: middle;
+    line-height: 5rem;
+}
+.meeting-times-td {
+    vertical-align: middle;
+    line-height: 5rem;
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    line-height: 4vh;
+}
+
+/* Mobile/Tablet Support */
+@media only screen and (max-width: 1300px) {
+    .wrapper {
+        width: 67%;
+    }
+
+    .navbar {
+        padding-left: 16.5%;
+        padding-right: 16.5%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .column-right {
+        padding-left: 2em;
+    }
+
+    .image-credits {
+        left: 2rem;
+        width: calc(100% - 3rem);
+    }
+    
+    .column-left {
+        padding-right: 2em;
+    }
+    
+    .iframe-container {
+        padding-top: 70%;
+    }
+
+    .meeting-times-th {
+        line-height: 2.5rem;
+        font-size: 0.9rem;
+    }
+    .meeting-times-td {
+        line-height: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 900px) { 
+    .wrapper {
+        width: 85%;
+    }
+    
+    .navbar {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .column-right {
+        padding-left: 1em;
+    }
+
+    .image-credits {
+        left: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .column-left {
+        padding-right: 1em;
+    }
+
+    .iframe-container {
+        padding-top: 80%;
+    }
+
+    .meeting-times-th {
+        line-height: inherit;
+    }
+    .meeting-times-td {
+        line-height: inherit;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
