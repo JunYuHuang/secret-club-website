@@ -4,4 +4,7 @@ $('.navbar-collapse a').click(function(){
 });
 
 // auto-update copyright year
-document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+var currentYears = document.getElementsByClassName("currentYear");
+for (var i = 0; 0 < currentYears.length; i++) {
+   currentYears[i].innerHTML = new Date().getFullYear();
+}
