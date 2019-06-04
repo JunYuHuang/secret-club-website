@@ -9,8 +9,8 @@ html {
 
 body {
     position: relative;
-    background-color: black;
     color: #f8f9fa;
+    background-color: black;
 }
 
 p { 
@@ -79,7 +79,7 @@ nav { background-color: #000;}
     padding-left: 0.4rem;
 }
 
-#home-section, #about-section, #beliefs-section, #contact-section, #meeting-times-section { 
+#home-section, #about-section, #our-team-section, #events-section, #shop-section, #contact-section { 
     padding-top: 56px;
 }
 
@@ -92,20 +92,20 @@ nav { background-color: #000;}
 .last-section-height { min-height: 96vh; }
 .footer-height { min-height: 4vh; }
 
-/* Home Section */
+/* About Section */
 #home-splash-background {
     background-size: 100%;
     background-size: cover;
     background-position: center center;
     vertical-align: top;
     height: 100vh;
-    background-image: url("../images/meeting-hall.jpg");
+    background-image: url("../images/face-in-dark-2.jpg");
 }
 
 #home-splash-filter {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    /* background-color: rgba(0,0,0,0.3); */
 }
 
 #home-splash-content {
@@ -119,7 +119,6 @@ h1.display-3 {
     margin: auto;
 }
 
-/* About Section */
 .column-right {
     padding-left: 3em;
     padding-right: 1em;
@@ -145,27 +144,30 @@ h1.display-3 {
     bottom: 0;
     left: 3rem; /* must change in media queries to scale */
     width: calc(100% - 4rem); /* must change in media queries to scale */
-    font-size: 0.9rem; 
+    font-size: 1rem;
     background-color: rgba(0,0,0,0.6);
     text-align: right;
     padding: 0.9rem;
 }
 
-#about-image-meeting {
-    filter: brightness(1.4);
-    background-image: url("../images/about-image-meeting.jpg");
+#about-image-face {
+    /* filter: brightness(1.4); */
+    background-image: url("../images/face-in-dark.jpg");
 }
 
-#about-image-history {
-    filter: grayscale(1);
-    background-image: url("../images/about-image-old-hall.png");
-}
+/* Our Team Section */
+
+
+/* Events Section */
+
+/* Shop Section */
 
 /* Contact Section */
 .iframe-container {
     overflow: hidden;
     padding-top: 55%;
     position: relative;
+    filter: grayscale(100%);
 }
 
 .iframe-container iframe {
@@ -253,7 +255,7 @@ td.contact-td-content {
     }
     
     .iframe-container {
-        padding-top: 70%;
+        padding-top: 60%;
     }
 
     .meeting-times-th {
