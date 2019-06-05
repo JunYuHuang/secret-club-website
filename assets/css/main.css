@@ -83,6 +83,10 @@ nav { background-color: #000;}
     padding-top: 56px;
 }
 
+.extra-padding-top {
+    padding-top: 56px;
+}
+
 .extra-padding-bottom {
     margin-bottom: 56px;
 }
@@ -156,7 +160,16 @@ h1.display-3 {
 }
 
 /* Our Team Section */
-
+.our-team-profile-portrait {
+    display: block;
+    /* margin: 0 auto; */
+    /* width: 10rem; */
+    /* height: 10rem; */
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
 
 /* Events Section */
 
