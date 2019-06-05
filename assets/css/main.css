@@ -92,9 +92,18 @@ nav { background-color: #000;}
 }
 
 .full-height { min-height: 100vh; }
-.half-height { min-height: 50vh; }
+.half-height { min-height: calc(50vh - 56px); }
 .last-section-height { min-height: 96vh; }
 .footer-height { min-height: 4vh; }
+
+.image-grayscale {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.image-grayscale:hover {
+    filter: grayscale(0);
+}
 
 /* About Section */
 #home-splash-background {
@@ -155,7 +164,6 @@ h1.display-3 {
 }
 
 #about-image-face {
-    /* filter: brightness(1.4); */
     background-image: url("../images/face-in-dark.jpg");
 }
 
@@ -168,6 +176,22 @@ h1.display-3 {
     margin-bottom: 2rem;
 }
 
+.image-fill-container {
+    object-fit: cover;
+}
+
+.carousel-caption {
+    width: 100%;
+    height: 33.3%;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    bottom: 0;
+    padding-top: 40px;
+    padding-left: 16%;
+    padding-right: 16%;
+    overflow: hidden;
+    transition: 0.5s;
+}
 /* Events Section */
 
 /* Shop Section */
@@ -263,18 +287,14 @@ td.contact-td-content {
     .column-left {
         padding-right: 2em;
     }
-    
-    .iframe-container {
-        padding-top: 60%;
+
+    .our-team-profile-portrait {
+        margin: 0 auto;
+        width: 75%;
     }
 
-    .meeting-times-th {
-        line-height: 2.5rem;
-        font-size: 0.9rem;
-    }
-    .meeting-times-td {
-        line-height: 2.5rem;
-        font-size: 0.9rem;
+    .iframe-container {
+        padding-top: 60%;
     }
 }
 
@@ -314,21 +334,13 @@ td.contact-td-content {
     .column-left {
         padding-right: 1em;
     }
+    
+    .our-team-profile-portrait {
+        margin: 0 auto;
+        width: 50%;
+    }
 
     .iframe-container {
         padding-top: 80%;
-    }
-
-    .meeting-times-th {
-        line-height: inherit;
-    }
-    .meeting-times-td {
-        line-height: inherit;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    .navbar-brand {
-        font-size: 1rem;
     }
 }

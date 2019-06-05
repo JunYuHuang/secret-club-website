@@ -4,10 +4,12 @@ $('.navbar-collapse a').click(function(){
 });
 
 // auto-update copyright year
-var currentYears = document.getElementsByClassName("currentYear");
-for (var i = 0; 0 < currentYears.length; i++) {
-   currentYears[i].innerHTML = new Date().getFullYear();
-}
+// var currentYears = document.getElementsByClassName("currentYear");
+// for (var i = 0; 0 < currentYears.length; i++) {
+//    currentYears[i].innerHTML = new Date().getFullYear();
+// }
+var currentYear = document.getElementById("currentYear");
+currentYear.innerHTML = new Date().getFullYear();
 
 // change navbar background color from transparent to black after scrolling past #home-splash-background
 var fixedTopNavbar = document.getElementById("fixedTopNavbar");

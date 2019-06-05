@@ -4,4 +4,6 @@
 * william wop - <a href="https://unsplash.com/@jjjordan">JJ Jordan</a>
 * mia grayton - <a href="https://unsplash.com/@alma_black">Alma Black</a>
 * steve white - <a href="https://unsplash.com/@mroz">Filip Mroz</a>
-* shop section images 
+* hackathon - <a href="https://unsplash.com/@ilyapavlov">Ilya Pavlov</a>
+* rave - <a href="https://unsplash.com/@overdriv3">A. L.</a>
+* pizza gathering - <a href="https://unsplash.com/@pablomerchanm">Pablo Merchan Montes</a>
