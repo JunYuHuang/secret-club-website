@@ -162,9 +162,6 @@ h1.display-3 {
 /* Our Team Section */
 .our-team-profile-portrait {
     display: block;
-    /* margin: 0 auto; */
-    /* width: 10rem; */
-    /* height: 10rem; */
     width: 100%;
     height: auto;
     border-radius: 50%;
