@@ -17,7 +17,7 @@
     <title>The Secret Club</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
-     <nav id="fixedTopNavbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent">
+     <nav id="fixedTopNavbar" class="navbar fixed-top navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="#home-splash-background">
             <i class="fas fa-mask"></i> &nbsp;
             The Secret Club
@@ -45,14 +45,24 @@
             </ul>
         </div>
      </nav>
-    <div id="home-splash-background">
+    <!-- <div id="home-splash-background">
         <div id="home-splash-filter">
             <div id="home-splash-content" class="container">
                 <h1 class="display-3 text-center">Psst... Hey you!</h1>
             </div>
         </div>
+    </div> -->
+    <div id="splash" class="parallax-container">
+        <div class="background">
+            <img src="./assets/images/face-in-dark-2.jpg" alt="Woman's face in darkness" class="background-image">
+        </div>
+        <div class="foreground">
+            <div class="foreground-content">
+                <h1 class="display-3 text-center">Psst... Hey you!</h1>
+            </div>
+        </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper" id="main-content-start">
         <div class="container-fluid px-0 full-height" id="about-section">
             <h1>About</h1>
             <div class="row extra-padding-bottom">
@@ -148,8 +158,8 @@
             <h1>Shop</h1>
             <div class="row align-items-center extra-padding-bottom">
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/burrito.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/burrito.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Burrito</h3>
                             <p class="card-text">$5</p>
@@ -157,8 +167,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/cardboard-box.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/cardboard-box.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Box</h3>
                             <p class="card-text">$20</p>
@@ -166,8 +176,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/face-mask.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/face-mask.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Face Mask</h3>
                             <p class="card-text">$50</p>
@@ -175,8 +185,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/hat.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/hat.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Hat</h3>
                             <p class="card-text">$30</p>
@@ -184,8 +194,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/magnifying-glass.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/magnifying-glass.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Magnifying Glass</h3>
                             <p class="card-text">$15</p>
@@ -193,8 +203,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 shop-item-img">
-                    <div class="card mb-3 image-grayscale">
-                        <img src="./assets/images/trench-coat.jpg" class="card-img-top img-fluid" alt="burrito">
+                    <div class="card mb-3">
+                        <img src="./assets/images/trench-coat.jpg" class="card-img-top img-fluid image-grayscale" alt="burrito">
                         <div class="card-body">
                             <h3 class="card-title">Secret Trench Coat</h3>
                             <p class="card-text">$100</p>
