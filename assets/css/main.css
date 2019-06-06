@@ -94,6 +94,7 @@ nav { background-color: #000;}
 .full-height { min-height: 100vh; }
 .half-height { min-height: calc(50vh - 56px); }
 .third-height { min-height: calc(33vh - 56px); }
+.quarter-height { min-height: calc(25vh - 56px); }
 .last-section-height { min-height: 96vh; }
 .footer-height { min-height: 4vh; }
 
@@ -196,8 +197,28 @@ h1.display-3 {
 }
 
 /* Shop Section */
+.shop-item-img {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 1.8em;
+}
+
+.card img {
+    /* min-height: calc(33vh - 56px); */
+    object-fit: cover;
+}
+
+.card-body {
+    border-bottom: 0.3em solid white;
+}
+
 .card {
-    /* background: gray; */
+    background-color: inherit;
+    border: none;
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 /* Contact Section */
@@ -284,6 +305,10 @@ td.contact-td-content {
     .our-team-profile-portrait {
         margin: 0 auto;
         width: 75%;
+    }
+
+    .card img {
+        /* min-height: calc(25% - 56px); */
     }
 
     .iframe-container {

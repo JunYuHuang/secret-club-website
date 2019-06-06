@@ -3,11 +3,6 @@ $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
 
-// auto-update copyright year
-// var currentYears = document.getElementsByClassName("currentYear");
-// for (var i = 0; 0 < currentYears.length; i++) {
-//    currentYears[i].innerHTML = new Date().getFullYear();
-// }
 var currentYear = document.getElementById("currentYear");
 currentYear.innerHTML = new Date().getFullYear();
 
@@ -15,7 +10,7 @@ currentYear.innerHTML = new Date().getFullYear();
 var fixedTopNavbar = document.getElementById("fixedTopNavbar");
 window.onscroll = function() {
     "use strict";
-    if (document.body.scrollTop >= 10 ) {
+    if (document.body.scrollTop >= 1000 ) {
         fixedTopNavbar.classList.add("bg-black");
         fixedTopNavbar.classList.remove("bg-transparent");
     } else {
