@@ -38,22 +38,10 @@ h3 {
     font-size: 1.5rem;
 }
 
-.navbar {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
 .wrapper {
     width: 50%;
     padding-top: 112px;
     margin: 0 auto;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .blockquote {
@@ -72,13 +60,22 @@ h3 {
     padding-bottom: 3rem;
 }
 
-nav { background-color: #000;}
+/* Navbar */
+
+.navbar {
+    padding-left: 25%;
+    padding-right: 25%;
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,0.6);
     padding-right: 0.4rem;
     padding-left: 0.4rem;
 }
+
+/* Misc */
+
+.bg-black { background-color: #000; }
 
 #home-section, #about-section, #our-team-section, #events-section, #shop-section, #contact-section { 
     padding-top: 56px;
