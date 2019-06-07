@@ -121,10 +121,6 @@ h3 {
     line-height: 100vh;
 }
 
-h1.display-3 {
-    margin: auto;
-}
-
 /* About Section */
 .column-right {
     padding-left: 3em;
@@ -144,17 +140,6 @@ h1.display-3 {
     height: 100%;
     background-size: cover;
     background-position: center center;
-}
-
-.image-credits {
-    position: absolute;
-    bottom: 0;
-    left: 3rem; /* must change in media queries to scale */
-    width: calc(100% - 4rem); /* must change in media queries to scale */
-    font-size: 1rem;
-    background-color: rgba(0,0,0,0.6);
-    text-align: right;
-    padding: 0.9rem;
 }
 
 #about-image-face {
@@ -296,11 +281,6 @@ td.contact-td-content {
     .column-right {
         padding-left: 2em;
     }
-
-    .image-credits {
-        left: 2rem;
-        width: calc(100% - 3rem);
-    }
     
     .column-left {
         padding-right: 2em;
@@ -342,11 +322,6 @@ td.contact-td-content {
 
     .column-right {
         padding-left: 1em;
-    }
-
-    .image-credits {
-        left: 1rem;
-        width: calc(100% - 2rem);
     }
 
     .column-left {
