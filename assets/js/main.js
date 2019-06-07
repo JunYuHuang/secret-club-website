@@ -5,7 +5,6 @@ $('.navbar-collapse a').click(function(){
 
 var currentYear = document.getElementById("currentYear");
 currentYear.innerHTML = new Date().getFullYear();
-
 // change navbar background color from transparent to black after scrolling past #home-splash-background
 // var fixedTopNavbar = document.getElementById("fixedTopNavbar");
 // window.onscroll = function() {

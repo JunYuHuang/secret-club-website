@@ -93,8 +93,8 @@ h3 {
 .half-height { min-height: calc(50vh - 56px); }
 .third-height { min-height: calc(33vh - 56px); }
 .quarter-height { min-height: calc(25vh - 56px); }
-.last-section-height { min-height: 96vh; }
-.footer-height { min-height: 4vh; }
+.last-section-height { min-height: calc(97vh - 2rem); }
+.footer-height { min-height: 2rem; }
 
 .image-grayscale {
     filter: grayscale(100%);
@@ -210,7 +210,7 @@ h3 {
 /* Contact Section */
 .iframe-container {
     overflow: hidden;
-    padding-top: 55%;
+    padding-top: 45%;
     position: relative;
     filter: grayscale(100%);
     transition: 0.5s;
@@ -248,7 +248,7 @@ td.contact-td-content {
 /* Footer */
 .footer {
     text-align: center;
-    line-height: 4vh;
+    line-height: 5vh;
 }
 
 /* Mobile/Tablet Support */
