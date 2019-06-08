@@ -38,6 +38,18 @@ h3 {
     font-size: 1.5rem;
 }
 
+img {
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.img-fade {
+    transform: translateX(0);
+    opacity: 1.0;
+    transition: all 300ms;
+}
+
 .wrapper {
     width: 50%;
     padding-top: 112px;
