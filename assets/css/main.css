@@ -147,13 +147,14 @@ img {
 }
 
 .about-image-frame {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
 }
 
 #about-image-face {
-    background-image: url("../images/face-in-dark.jpg");
+    /* background-image: url("../images/face-in-dark.jpg"); */
+    display: block;
 }
 
 /* Our Team Section */
@@ -168,6 +169,7 @@ img {
 /* Events Section */
 .image-fill-container {
     object-fit: cover;
+    width: 100%;
 }
 
 .carousel-caption {
@@ -358,6 +360,11 @@ td.contact-td-content {
     }
 
     .carousel-indicators { margin-bottom: 0; }
+
+    .row > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .iframe-container {
         padding-top: 80%;
