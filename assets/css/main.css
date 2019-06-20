@@ -48,6 +48,15 @@ img {
     transition: all 500ms;
 }
 
+.text-fade {
+    animation: text-fade 7s;
+}
+
+@keyframes text-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .wrapper {
     width: 50%;
     padding-top: 112px;
